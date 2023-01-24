@@ -1,110 +1,278 @@
 [
   {
-    "team": "Saiyans FC",
+    "team": {
+      "id": "saiyans-fc",
+      "name": "Saiyans FC",
+      "image": "saiyans-fc.svg",
+      "url": "saiyans-fc",
+      "president": "",
+      "channel": "",
+      "coach": "",
+      "socialNetwork": [
+        "instagram",
+        "tiktok",
+        "twitter"
+      ],
+      "players": []
+    },
     "wins": 3,
-    "loses": 0,
-    "scoredGoals": 10,
-    "concededGoals": 4,
-    "yellowCards": 3,
+    "loses": 1,
+    "scoredGoals": 11,
+    "concededGoals": 5,
+    "yellowCards": 6,
     "redCards": 1
   },
   {
-    "team": "1K FC",
+    "team": {
+      "id": "ultimate-mostoles",
+      "name": "Ultimate Móstoles",
+      "image": "ultimate-mostoles.svg",
+      "url": "ultimate-mostoles",
+      "president": "",
+      "channel": "",
+      "coach": "",
+      "socialNetwork": [
+        "instagram",
+        "tiktok",
+        "twitter"
+      ],
+      "players": []
+    },
     "wins": 3,
-    "loses": 0,
-    "scoredGoals": 12,
-    "concededGoals": 7,
-    "yellowCards": 0,
-    "redCards": 0
-  },
-  {
-    "team": "Kunisports",
-    "wins": 2,
     "loses": 1,
-    "scoredGoals": 5,
-    "concededGoals": 3,
-    "yellowCards": 2,
-    "redCards": 0
-  },
-  {
-    "team": "Los Troncos FC",
-    "wins": 2,
-    "loses": 1,
-    "scoredGoals": 11,
-    "concededGoals": 10,
-    "yellowCards": 2,
-    "redCards": 0
-  },
-  {
-    "team": "Ultimate Móstoles",
-    "wins": 2,
-    "loses": 1,
-    "scoredGoals": 9,
-    "concededGoals": 8,
-    "yellowCards": 1,
-    "redCards": 0
-  },
-  {
-    "team": "Porcinos FC",
-    "wins": 2,
-    "loses": 1,
-    "scoredGoals": 9,
+    "scoredGoals": 14,
     "concededGoals": 9,
     "yellowCards": 1,
     "redCards": 0
   },
   {
-    "team": "El Barrio",
-    "wins": 1,
+    "team": {
+      "id": "porcinos-fc",
+      "name": "Porcinos FC",
+      "image": "porcinos-fc.svg",
+      "url": "porcinos-fc",
+      "president": "",
+      "channel": "",
+      "coach": "",
+      "socialNetwork": [
+        "instagram",
+        "tiktok",
+        "twitter"
+      ],
+      "players": []
+    },
+    "wins": 3,
+    "loses": 1,
+    "scoredGoals": 14,
+    "concededGoals": 10,
+    "yellowCards": 1,
+    "redCards": 0
+  },
+  {
+    "team": {
+      "id": "1k-inverse",
+      "name": "1K FC",
+      "image": "/1k-inverse.svg",
+      "url": "1k-inverse",
+      "president": "",
+      "channel": "",
+      "coach": "",
+      "socialNetwork": [
+        "instagram",
+        "tiktok",
+        "twitter"
+      ],
+      "players": []
+    },
+    "wins": 3,
+    "loses": 1,
+    "scoredGoals": 14,
+    "concededGoals": 12,
+    "yellowCards": 1,
+    "redCards": 0
+  },
+  {
+    "team": {
+      "id": "kunisports",
+      "name": "Kunisports",
+      "image": "kunisports.svg",
+      "url": "kunisports",
+      "president": "",
+      "channel": "",
+      "coach": "",
+      "socialNetwork": [
+        "instagram",
+        "tiktok",
+        "twitter"
+      ],
+      "players": []
+    },
+    "wins": 3,
+    "loses": 1,
+    "scoredGoals": 7,
+    "concededGoals": 5,
+    "yellowCards": 6,
+    "redCards": 0
+  },
+  {
+    "team": {
+      "id": "el-barrio",
+      "name": "El Barrio",
+      "image": "el-barrio.svg",
+      "url": "el-barrio",
+      "president": "",
+      "channel": "",
+      "coach": "",
+      "socialNetwork": [
+        "instagram",
+        "tiktok",
+        "twitter"
+      ],
+      "players": []
+    },
+    "wins": 2,
+    "loses": 2,
+    "scoredGoals": 13,
+    "concededGoals": 9,
+    "yellowCards": 2,
+    "redCards": 0
+  },
+  {
+    "team": {
+      "id": "aniquiladores",
+      "name": "Aniquiladores FC",
+      "image": "aniquiladores.svg",
+      "url": "aniquiladores",
+      "president": "",
+      "channel": "",
+      "coach": "",
+      "socialNetwork": [
+        "instagram",
+        "tiktok",
+        "twitter"
+      ],
+      "players": []
+    },
+    "wins": 2,
     "loses": 2,
     "scoredGoals": 8,
-    "concededGoals": 7,
+    "concededGoals": 10,
     "yellowCards": 1,
     "redCards": 0
   },
   {
-    "team": "Rayo de Barcelona",
-    "wins": 1,
+    "team": {
+      "id": "xbuyer-team",
+      "name": "XBUYER TEAM",
+      "image": "xbuyer-team.svg",
+      "url": "xbuyer-team",
+      "president": "",
+      "channel": "",
+      "coach": "",
+      "socialNetwork": [
+        "instagram",
+        "tiktok",
+        "twitter"
+      ],
+      "players": []
+    },
+    "wins": 2,
     "loses": 2,
-    "scoredGoals": 9,
-    "concededGoals": 9,
-    "yellowCards": 0,
-    "redCards": 0
-  },
-  {
-    "team": "Aniquiladores FC",
-    "wins": 1,
-    "loses": 2,
-    "scoredGoals": 7,
-    "concededGoals": 9,
-    "yellowCards": 1,
-    "redCards": 0
-  },
-  {
-    "team": "XBUYER TEAM",
-    "wins": 1,
-    "loses": 2,
-    "scoredGoals": 5,
-    "concededGoals": 8,
+    "scoredGoals": 8,
+    "concededGoals": 10,
     "yellowCards": 3,
     "redCards": 0
   },
   {
-    "team": "Jijantes FC",
-    "wins": 0,
-    "loses": 3,
-    "scoredGoals": 7,
-    "concededGoals": 12,
+    "team": {
+      "id": "los-troncos",
+      "name": "Los Troncos FC",
+      "image": "los-troncos.png",
+      "url": "los-troncos",
+      "president": "",
+      "channel": "",
+      "coach": "",
+      "socialNetwork": [
+        "instagram",
+        "tiktok",
+        "twitter"
+      ],
+      "players": []
+    },
+    "wins": 2,
+    "loses": 2,
+    "scoredGoals": 12,
+    "concededGoals": 15,
     "yellowCards": 2,
+    "redCards": 1
+  },
+  {
+    "team": {
+      "id": "rayo-barcelona",
+      "name": "Rayo de Barcelona",
+      "image": "rayo-barcelona.svg",
+      "url": "rayo-barcelona",
+      "president": "",
+      "channel": "",
+      "coach": "",
+      "socialNetwork": [
+        "instagram",
+        "tiktok",
+        "twitter"
+      ],
+      "players": []
+    },
+    "wins": 1,
+    "loses": 3,
+    "scoredGoals": 10,
+    "concededGoals": 14,
+    "yellowCards": 1,
     "redCards": 0
   },
   {
-    "team": "PIO FC",
+    "team": {
+      "id": "jijantes-fc",
+      "name": "Jijantes FC",
+      "image": "jijantes-fc.svg",
+      "url": "jijantes-fc",
+      "president": "",
+      "channel": "",
+      "coach": "",
+      "socialNetwork": [
+        "instagram",
+        "tiktok",
+        "twitter"
+      ],
+      "players": []
+    },
     "wins": 0,
-    "loses": 3,
-    "scoredGoals": 3,
-    "concededGoals": 9,
-    "yellowCards": 4,
+    "loses": 4,
+    "scoredGoals": 9,
+    "concededGoals": 15,
+    "yellowCards": 3,
+    "redCards": 0
+  },
+  {
+    "team": {
+      "id": "pio",
+      "name": "PIO FC",
+      "image": "pio.svg",
+      "url": "pio",
+      "president": "",
+      "channel": "",
+      "coach": "",
+      "socialNetwork": [
+        "instagram",
+        "tiktok",
+        "twitter"
+      ],
+      "players": []
+    },
+    "wins": 0,
+    "loses": 4,
+    "scoredGoals": 5,
+    "concededGoals": 11,
+    "yellowCards": 5,
     "redCards": 0
   }
 ]

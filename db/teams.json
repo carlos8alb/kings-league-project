@@ -1,0 +1,134 @@
+[
+  {
+    "id": "1k-inverse",
+    "name": "1K FC",
+    "image": "/1k-inverse.svg",
+    "url": "1k-inverse",
+    "president": "",
+    "channel": "",
+    "coach": "",
+    "socialNetwork": ["instagram", "tiktok", "twitter"],
+    "players": []
+  },
+  {
+    "id": "aniquiladores",
+    "name": "Aniquiladores FC",
+    "image": "aniquiladores.svg",
+    "url": "aniquiladores",
+    "president": "",
+    "channel": "",
+    "coach": "",
+    "socialNetwork": ["instagram", "tiktok", "twitter"],
+    "players": []
+  },
+  {
+    "id": "el-barrio",
+    "name": "El Barrio",
+    "image": "el-barrio.svg",
+    "url": "el-barrio",
+    "president": "",
+    "channel": "",
+    "coach": "",
+    "socialNetwork": ["instagram", "tiktok", "twitter"],
+    "players": []
+  },
+  {
+    "id": "jijantes-fc",
+    "name": "Jijantes FC",
+    "image": "jijantes-fc.svg",
+    "url": "jijantes-fc",
+    "president": "",
+    "channel": "",
+    "coach": "",
+    "socialNetwork": ["instagram", "tiktok", "twitter"],
+    "players": []
+  },
+  {
+    "id": "kunisports",
+    "name": "Kunisports",
+    "image": "kunisports.svg",
+    "url": "kunisports",
+    "president": "",
+    "channel": "",
+    "coach": "",
+    "socialNetwork": ["instagram", "tiktok", "twitter"],
+    "players": []
+  },
+  {
+    "id": "los-troncos",
+    "name": "Los Troncos FC",
+    "image": "los-troncos.png",
+    "url": "los-troncos",
+    "president": "",
+    "channel": "",
+    "coach": "",
+    "socialNetwork": ["instagram", "tiktok", "twitter"],
+    "players": []
+  },
+  {
+    "id": "pio",
+    "name": "PIO FC",
+    "image": "pio.svg",
+    "url": "pio",
+    "president": "",
+    "channel": "",
+    "coach": "",
+    "socialNetwork": ["instagram", "tiktok", "twitter"],
+    "players": []
+  },
+  {
+    "id": "porcinos-fc",
+    "name": "Porcinos FC",
+    "image": "porcinos-fc.svg",
+    "url": "porcinos-fc",
+    "president": "",
+    "channel": "",
+    "coach": "",
+    "socialNetwork": ["instagram", "tiktok", "twitter"],
+    "players": []
+  },
+  {
+    "id": "rayo-barcelona",
+    "name": "Rayo de Barcelona",
+    "image": "rayo-barcelona.svg",
+    "url": "rayo-barcelona",
+    "president": "",
+    "channel": "",
+    "coach": "",
+    "socialNetwork": ["instagram", "tiktok", "twitter"],
+    "players": []
+  },
+  {
+    "id": "saiyans-fc",
+    "name": "Saiyans FC",
+    "image": "saiyans-fc.svg",
+    "url": "saiyans-fc",
+    "president": "",
+    "channel": "",
+    "coach": "",
+    "socialNetwork": ["instagram", "tiktok", "twitter"],
+    "players": []
+  },
+  {
+    "id": "ultimate-mostoles",
+    "name": "Ultimate Móstoles",
+    "image": "ultimate-mostoles.svg",
+    "url": "ultimate-mostoles",
+    "president": "",
+    "channel": "",
+    "coach": "",
+    "socialNetwork": ["instagram", "tiktok", "twitter"],
+    "players": []
+  },
+  {
+    "id": "xbuyer-team",
+    "name": "XBUYER TEAM",
+    "image": "xbuyer-team.svg",
+    "url": "xbuyer-team",
+    "president": "",
+    "channel": "",
+    "coach": "",
+    "socialNetwork": ["instagram", "tiktok", "twitter"],
+    "players": []
+  }
+]
