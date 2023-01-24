@@ -2,8 +2,11 @@
 /* eslint-disable space-before-function-paren */
 /* eslint-disable semi */
 import * as cheerio from 'cheerio';
-import { writeFile } from 'node:fs/promises';
+import { writeFile, readFile } from 'node:fs/promises';
 import path from 'node:path';
+
+const DB_PATH = path.join(process.cwd(), '/db/');
+const teams = await readFile(`${DB_PATH}/teams.json`, 'utf-8').then(JSON.parse);
 
 const URLS = {
   leaderboard: 'https://kingsleague.pro/estadisticas/clasificacion/',
@@ -29,6 +32,10 @@ async function getLeaderboard() {
     redCards: { selector: '.fs-table-text_9', typeOf: 'number' },
   };
 
+  const getTeamFrom = ({ name }) => {
+    return teams.find((team) => team.name === name);
+  };
+
   const leaderboarSelectorEntries = Object.entries(LEADERBOARD_SELECTORS);
 
   const leaderboard = [];
@@ -40,12 +47,22 @@ async function getLeaderboard() {
         return [key, value];
       }
     );
-    leaderboard.push(Object.fromEntries(leaderboardEntries));
+    const { team: name, ...leaderboardFromTeam } =
+      Object.fromEntries(leaderboardEntries);
+
+    const team = getTeamFrom({ name });
+
+    leaderboard.push({
+      team,
+      ...leaderboardFromTeam,
+    });
   });
   return leaderboard;
 }
 
 const leaderboard = await getLeaderboard();
-const filePath = path.join(process.cwd(), '/db/leaderboard.json');
-
-await writeFile(filePath, JSON.stringify(leaderboard, null, 2), 'utf8');
+await writeFile(
+  `${DB_PATH}/leaderboard.json`,
+  JSON.stringify(leaderboard, null, 2),
+  'utf8'
+);
