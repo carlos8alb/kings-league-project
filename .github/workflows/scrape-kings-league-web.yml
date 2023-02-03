@@ -9,6 +9,7 @@ on:
   repository_dispatch:
     types:
       -webhook
+      
   schedule:
     - cron: "0 */1 * * 0"
   
@@ -17,16 +18,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
       - uses: actions/setup-node@v3
         with:
           node-version: 18
       - run: npm ci
       - run: |
           node scrapping/leaderboard.js
-          git config user.email "carlos8_alb@hotmail.com"
           git config user.name "[bot] Kings League Scraper"
-          git add -A
-          git commit -m "[bot] Update Kings League DB"
+          git commit -am "[bot] Update Kings League DB"
           git push origin main
