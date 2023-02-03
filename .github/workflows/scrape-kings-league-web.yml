@@ -25,6 +25,8 @@ jobs:
       - run: npm ci
       - run: |
           node scrapping/leaderboard.js
+          git config user.email "carlos8_alb@hotmail.com"
+          git config user.name "[bot] Kings League Scraper"
           git add -A
           git commit -m "[bot] Update Kings League DB"
           git push origin main
