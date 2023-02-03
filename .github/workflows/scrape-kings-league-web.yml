@@ -23,8 +23,6 @@ jobs:
         with:
           node-version: 18
           run_install: true
-      - run: npm ci
-      - run: npm test
       - run: |
           node scrapping/leaderboard.js
           git config user.name kings-league-bot
