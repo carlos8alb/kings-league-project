@@ -1,0 +1,338 @@
+[
+  {
+    "team": {
+      "id": "saiyans-fc",
+      "name": "Saiyans FC",
+      "image": "https://kings-league-api.carlos8alb.workers.dev/static/logos/saiyans-fc.svg",
+      "url": "saiyans-fc",
+      "channel": "",
+      "coach": "",
+      "socialNetwork": [
+        "instagram",
+        "tiktok",
+        "twitter"
+      ],
+      "players": [],
+      "presisent": {
+        "id": "thegrefg",
+        "name": "TheGrefg",
+        "image": "https://kingsleague.dev/presidents/thegrefg.webp",
+        "teamId": "saiyans-fc"
+      }
+    },
+    "wins": 3,
+    "loses": 1,
+    "scoredGoals": 11,
+    "concededGoals": 5,
+    "yellowCards": 6,
+    "redCards": 1
+  },
+  {
+    "team": {
+      "id": "ultimate-mostoles",
+      "name": "Ultimate Móstoles",
+      "image": "https://kings-league-api.carlos8alb.workers.dev/static/logos/ultimate-mostoles.svg",
+      "url": "ultimate-mostoles",
+      "channel": "",
+      "coach": "",
+      "socialNetwork": [
+        "instagram",
+        "tiktok",
+        "twitter"
+      ],
+      "players": [],
+      "presisent": {
+        "id": "djmariio",
+        "name": "DjMaRiiO",
+        "image": "https://kingsleague.dev/presidents/djmariio.webp",
+        "teamId": "ultimate-mostoles"
+      }
+    },
+    "wins": 3,
+    "loses": 1,
+    "scoredGoals": 14,
+    "concededGoals": 9,
+    "yellowCards": 1,
+    "redCards": 0
+  },
+  {
+    "team": {
+      "id": "porcinos-fc",
+      "name": "Porcinos FC",
+      "image": "https://kings-league-api.carlos8alb.workers.dev/static/logos/porcinos-fc.svg",
+      "url": "porcinos-fc",
+      "channel": "",
+      "coach": "",
+      "socialNetwork": [
+        "instagram",
+        "tiktok",
+        "twitter"
+      ],
+      "players": [],
+      "presisent": {
+        "id": "ibai-llanos",
+        "name": "Ibai Llanos",
+        "image": "https://kingsleague.dev/presidents/ibai-llanos.webp",
+        "teamId": "porcinos-fc"
+      }
+    },
+    "wins": 3,
+    "loses": 1,
+    "scoredGoals": 14,
+    "concededGoals": 10,
+    "yellowCards": 1,
+    "redCards": 0
+  },
+  {
+    "team": {
+      "id": "1k-inverse",
+      "name": "1K FC",
+      "image": "https://kings-league-api.carlos8alb.workers.dev/static/logos/1k-inverse.svg",
+      "url": "1k-inverse",
+      "channel": "",
+      "coach": "",
+      "socialNetwork": [
+        "instagram",
+        "tiktok",
+        "twitter"
+      ],
+      "players": [],
+      "presisent": {
+        "id": "iker-casillas",
+        "name": "Iker Casillas",
+        "image": "https://kingsleague.dev/presidents/iker-casillas.webp",
+        "teamId": "1k-inverse"
+      }
+    },
+    "wins": 3,
+    "loses": 1,
+    "scoredGoals": 14,
+    "concededGoals": 12,
+    "yellowCards": 1,
+    "redCards": 0
+  },
+  {
+    "team": {
+      "id": "kunisports",
+      "name": "Kunisports",
+      "image": "https://kings-league-api.carlos8alb.workers.dev/static/logos/kunisports.svg",
+      "url": "kunisports",
+      "channel": "",
+      "coach": "",
+      "socialNetwork": [
+        "instagram",
+        "tiktok",
+        "twitter"
+      ],
+      "players": [],
+      "presisent": {
+        "id": "kun-aguero",
+        "name": "Kun Agüero",
+        "image": "https://kingsleague.dev/presidents/kun-aguero.webp",
+        "teamId": "kunisports"
+      }
+    },
+    "wins": 3,
+    "loses": 1,
+    "scoredGoals": 7,
+    "concededGoals": 5,
+    "yellowCards": 6,
+    "redCards": 0
+  },
+  {
+    "team": {
+      "id": "el-barrio",
+      "name": "El Barrio",
+      "image": "https://kings-league-api.carlos8alb.workers.dev/static/logos/el-barrio.svg",
+      "url": "el-barrio",
+      "channel": "",
+      "coach": "",
+      "socialNetwork": [
+        "instagram",
+        "tiktok",
+        "twitter"
+      ],
+      "players": [],
+      "presisent": {
+        "id": "adri-contreras",
+        "name": "Adri Contreras",
+        "image": "https://kingsleague.dev/presidents/adri-contreras.webp",
+        "teamId": "el-barrio"
+      }
+    },
+    "wins": 2,
+    "loses": 2,
+    "scoredGoals": 13,
+    "concededGoals": 9,
+    "yellowCards": 2,
+    "redCards": 0
+  },
+  {
+    "team": {
+      "id": "aniquiladores-fc",
+      "name": "Aniquiladores FC",
+      "image": "https://kings-league-api.carlos8alb.workers.dev/static/logos/aniquiladores.svg",
+      "url": "aniquiladores",
+      "channel": "",
+      "coach": "",
+      "socialNetwork": [
+        "instagram",
+        "tiktok",
+        "twitter"
+      ],
+      "players": [],
+      "presisent": {
+        "id": "juan-guarnizo",
+        "name": "Juan Guarnizo",
+        "image": "https://kingsleague.dev/presidents/juan-guarnizo.webp",
+        "teamId": "aniquiladores-fc"
+      }
+    },
+    "wins": 2,
+    "loses": 2,
+    "scoredGoals": 8,
+    "concededGoals": 10,
+    "yellowCards": 1,
+    "redCards": 0
+  },
+  {
+    "team": {
+      "id": "xbuyer-team",
+      "name": "XBUYER TEAM",
+      "image": "https://kings-league-api.carlos8alb.workers.dev/static/logos/xbuyer-team.svg",
+      "url": "xbuyer-team",
+      "channel": "",
+      "coach": "",
+      "socialNetwork": [
+        "instagram",
+        "tiktok",
+        "twitter"
+      ],
+      "players": [],
+      "presisent": {
+        "id": "hnos-buyer",
+        "name": "Hnos. Buyer",
+        "image": "https://kingsleague.dev/presidents/hnos-buyer.webp",
+        "teamId": "xbuyer-team"
+      }
+    },
+    "wins": 2,
+    "loses": 2,
+    "scoredGoals": 8,
+    "concededGoals": 10,
+    "yellowCards": 3,
+    "redCards": 0
+  },
+  {
+    "team": {
+      "id": "los-troncos",
+      "name": "Los Troncos FC",
+      "image": "https://kings-league-api.carlos8alb.workers.dev/static/logos/los-troncos.png",
+      "url": "los-troncos",
+      "channel": "",
+      "coach": "",
+      "socialNetwork": [
+        "instagram",
+        "tiktok",
+        "twitter"
+      ],
+      "players": [],
+      "presisent": {
+        "id": "perxitaa",
+        "name": "Perxitaa",
+        "image": "https://kingsleague.dev/presidents/perxitaa.webp",
+        "teamId": "los-troncos"
+      }
+    },
+    "wins": 2,
+    "loses": 2,
+    "scoredGoals": 12,
+    "concededGoals": 15,
+    "yellowCards": 2,
+    "redCards": 1
+  },
+  {
+    "team": {
+      "id": "rayo-barcelona",
+      "name": "Rayo de Barcelona",
+      "image": "https://kings-league-api.carlos8alb.workers.dev/static/logos/rayo-barcelona.svg",
+      "url": "rayo-barcelona",
+      "channel": "",
+      "coach": "",
+      "socialNetwork": [
+        "instagram",
+        "tiktok",
+        "twitter"
+      ],
+      "players": [],
+      "presisent": {
+        "id": "spursito",
+        "name": "Spursito",
+        "image": "https://kingsleague.dev/presidents/spursito.webp",
+        "teamId": "rayo-barcelona"
+      }
+    },
+    "wins": 1,
+    "loses": 3,
+    "scoredGoals": 10,
+    "concededGoals": 14,
+    "yellowCards": 1,
+    "redCards": 0
+  },
+  {
+    "team": {
+      "id": "jijantes-fc",
+      "name": "Jijantes FC",
+      "image": "https://kings-league-api.carlos8alb.workers.dev/static/logos/jijantes-fc.svg",
+      "url": "jijantes-fc",
+      "channel": "",
+      "coach": "",
+      "socialNetwork": [
+        "instagram",
+        "tiktok",
+        "twitter"
+      ],
+      "players": [],
+      "presisent": {
+        "id": "gerard-romero",
+        "name": "Gerard Romero",
+        "image": "https://kingsleague.dev/presidents/gerard-romero.webp",
+        "teamId": "jijantes-fc"
+      }
+    },
+    "wins": 0,
+    "loses": 4,
+    "scoredGoals": 9,
+    "concededGoals": 15,
+    "yellowCards": 3,
+    "redCards": 0
+  },
+  {
+    "team": {
+      "id": "pio",
+      "name": "PIO FC",
+      "image": "https://kings-league-api.carlos8alb.workers.dev/static/logos/pio.svg",
+      "url": "pio",
+      "channel": "",
+      "coach": "",
+      "socialNetwork": [
+        "instagram",
+        "tiktok",
+        "twitter"
+      ],
+      "players": [],
+      "presisent": {
+        "id": "rivers",
+        "name": "Rivers",
+        "image": "https://kingsleague.dev/presidents/rivers.webp",
+        "teamId": "pio"
+      }
+    },
+    "wins": 0,
+    "loses": 4,
+    "scoredGoals": 5,
+    "concededGoals": 11,
+    "yellowCards": 5,
+    "redCards": 0
+  }
+]
