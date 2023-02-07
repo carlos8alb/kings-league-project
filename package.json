@@ -2,7 +2,7 @@
   "name": "kings-league",
   "type": "module",
   "version": "1.0.0",
-  "description": "",
+  "description": "Kings League Project",
   "main": "index.js",
   "scripts": {
     "dev:api": "wrangler dev api/index.ts",
