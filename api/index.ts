@@ -23,11 +23,11 @@ app.get('/', (c) => {
   ]);
 });
 
-app.get('/leaderboard', (c) => {
+app.get('/leaderboard\\/?', (c) => {
   return c.json(leaderboard);
 });
 
-app.get('/teams', (c) => {
+app.get('/teams\\/?', (c) => {
   return c.json(teams);
 });
 
@@ -39,7 +39,7 @@ app.get('/teams/:id', (c) => {
     : c.json({ message: 'Team not found' }, 404);
 });
 
-app.get('/presidents', (c) => {
+app.get('/presidents\\/?', (c) => {
   return c.json(presidents);
 });
 
