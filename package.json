@@ -17,22 +17,22 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@astrojs/tailwind": "^3.0.1",
-    "astro": "^2.0.10",
+    "@astrojs/tailwind": "3.0.1",
+    "astro": "^.0.10",
     "cheerio": "1.0.0-rc.12",
-    "hono": "^2.7.3",
-    "tailwindcss": "^3.2.6"
+    "hono": "2.7.3",
+    "tailwindcss": "3.2.6"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "^3.19.0",
-    "@types/node": "^18.11.18",
-    "eslint-plugin-astro": "^0.23.0",
-    "prettier": "^2.8.3",
-    "prettier-plugin-astro": "^0.8.0",
-    "standard": "^17.0.0",
-    "typescript": "^4.9.4",
-    "vitest": "^0.27.2",
-    "wrangler": "^2.8.0"
+    "@cloudflare/workers-types": "3.19.0",
+    "@types/node": "18.11.18",
+    "eslint-plugin-astro": "0.23.0",
+    "prettier": "2.8.3",
+    "prettier-plugin-astro": "0.8.0",
+    "standard": "17.0.0",
+    "typescript": "4.9.4",
+    "vitest": "0.27.2",
+    "wrangler": "2.8.0"
   },
   "eslintConfig": {
     "extends": [
@@ -40,8 +40,8 @@
       "plugin:astro/recommended"
     ],
     "rules": {
-      "comma-dangle": "off",
-      "semi": "off",
+      "no-tabs": "off",
+      "indent": "off",
       "space-before-function-paren": "off"
     },
     "overrides": [
