@@ -1,17 +1,18 @@
 import * as cheerio from 'cheerio'
 import { writeDBFile, TEAMS, PRESIDENTS } from '../db/index.js'
+import { logSuccess, logError, logInfo } from './log.js'
 
 const URLS = {
   leaderboard: 'https://kingsleague.pro/estadisticas/clasificacion/'
 }
 
-async function scrape(url) {
+async function scrape (url) {
   const res = await fetch(url)
   const html = await res.text()
   return cheerio.load(html)
 }
 
-async function getLeaderboard() {
+async function getLeaderboard () {
   const $ = await scrape(URLS.leaderboard)
   const $rows = $('table tbody tr')
 
@@ -59,6 +60,15 @@ async function getLeaderboard() {
   return leaderboard
 }
 
-const leaderboard = await getLeaderboard()
+try {
+  logInfo('Scrapping MVP List...')
+  const leaderboard = await getLeaderboard()
+  logSuccess('Mvp List scraped successfully')
 
-await writeDBFile('leaderboard', leaderboard)
+  logInfo('Writting Mvp List to database...')
+  await writeDBFile('leaderboard', leaderboard)
+  logSuccess('Mvp List written successfully')
+} catch (error) {
+  logError('Error scrapping Mvp List')
+  logError(error)
+}
