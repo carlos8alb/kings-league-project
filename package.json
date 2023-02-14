@@ -7,12 +7,14 @@
   "scripts": {
     "astro": "astro",
     "build": "astro build",
-    "preview": "astro preview",
-    "start": "astro dev",
     "dev:api": "wrangler dev api/index.ts",
     "dev": "astro dev",
+    "preview": "astro preview",
     "publish:api": "wrangler publish api/index.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "scrape:mvp": "node scrapping/mvp.js",
+    "start": "astro dev",
+    "test": "vitest",
+    "test:cov": "vitest run --coverage"
   },
   "author": "",
   "license": "ISC",
