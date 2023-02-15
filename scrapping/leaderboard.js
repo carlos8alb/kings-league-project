@@ -6,13 +6,13 @@ const URLS = {
   leaderboard: 'https://kingsleague.pro/estadisticas/clasificacion/'
 }
 
-async function scrape (url) {
+async function scrape(url) {
   const res = await fetch(url)
   const html = await res.text()
   return cheerio.load(html)
 }
 
-async function getLeaderboard () {
+async function getLeaderboard() {
   const $ = await scrape(URLS.leaderboard)
   const $rows = $('table tbody tr')
 

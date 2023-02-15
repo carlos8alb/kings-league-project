@@ -1,6 +1,6 @@
 import * as cheerio from 'cheerio'
 import { writeDBFile, TEAMS } from '../db/index.js'
-import { logSuccess, logError, logInfo } from './log.js';
+import { logSuccess, logError, logInfo } from './log.js'
 
 const URLS = {
   mvp: 'https://kingsleague.pro/estadisticas/mvp/'
@@ -54,7 +54,7 @@ async function getMvp() {
   return mvp
 }
 
-const start = performance.now();
+const start = performance.now()
 try {
   logInfo('Scrapping MVP ...')
   const mvp = await getMvp()
