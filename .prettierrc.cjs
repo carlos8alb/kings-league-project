@@ -19,5 +19,6 @@ module.exports = {
   quoteProps: 'as-needed',
   arrowParens: 'always',
   htmlWhitespaceSensitivity: 'css',
-  jsxBracketSameLine: false
+  jsxBracketSameLine: false,
 }
+

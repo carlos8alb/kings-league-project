@@ -1,6 +1,7 @@
 name = "kings-league-api"
-main = "api/index.ts"
+main = "api/index.js"
 compatibility_date = "2023-01-19"
+node_compat = true
 
 [site]
 bucket = "./assets"
@@ -8,5 +9,5 @@ bucket = "./assets"
 [env.production]
 vars = { ENVIRONMENT = "production" }
 routes = [
-  { pattern = "kings-league-api.carlos8alb.workers.dev", custom_domain = true }
+  	{ pattern = "kings-league-api.carlos8alb.workers.dev", custom_domain = true }
 ]

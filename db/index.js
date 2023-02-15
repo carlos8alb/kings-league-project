@@ -9,7 +9,8 @@ async function readDBFile(filename) {
 
 export const TEAMS = await readDBFile('teams')
 export const PRESIDENTS = await readDBFile('presidents')
-// export const MVPS = await readDBFile('mvps')
+export const LEADERBOARD = await readDBFile('leaderboard')
+export const MVPS = await readDBFile('mvps')
 
 export function writeDBFile(dbName, data) {
   return writeFile(

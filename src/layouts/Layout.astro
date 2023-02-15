@@ -1,0 +1,19 @@
+---
+import Header from '@components/Header.astro'
+const { title } = Astro.props
+---
+
+<!DOCTYPE html>
+<html lang='es'>
+	<head>
+		<meta charset='UTF-8' />
+		<meta name='viewport' content='width=device-width' />
+		<link rel='icon' type='image/svg+xml' href='/favicon.svg' />
+		<meta name='generator' content={Astro.generator} />
+		<title>Document</title>
+	</head>
+	<body class='min-h-screen'>
+		<Header />
+		<slot />
+	</body>
+</html>
