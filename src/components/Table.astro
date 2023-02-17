@@ -16,16 +16,18 @@ const leaderboard = await response.json()
 		<tbody>
 			{
 				leaderboard.map((info, index) => {
-					const { team, wins, loses } = info
-					const { name, image: logo } = team
+					const { team, wins, loses, rank } = info
+					const { id, name, image: logo } = team
 					return (
 						<tr class='bg-white border-b text-black'>
 							<th scope='row' class='px-6 py-4 font-bold text-black'>
-								{index}
+								{rank}
 							</th>
-							<td class='px-6 py-4 font-bold flex gap-x-4'>
-								<img src={logo} alt={`Logo de ${name}`} class='w-6 h-6' />
-								{name}
+							<td class='px-6 py-4 font-bold'>
+								<a href={`/team/${id}`} class='flex gap-x-4 items-center'>
+									<img src={logo} alt={`Logo de ${name}`} class='w-6 h-6' />
+									{name}
+								</a>
 							</td>
 							<td class='px-6 py-4'>{wins}</td>
 							<td class='px-6 py-4'>{loses}</td>
