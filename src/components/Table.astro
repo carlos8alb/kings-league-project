@@ -24,7 +24,10 @@ const leaderboard = await response.json()
 								{rank}
 							</th>
 							<td class='px-6 py-4 font-bold'>
-								<a href={`/team/${id}`} class='flex gap-x-4 items-center'>
+								<a
+									href={`/team/${id}`}
+									class='flex gap-x-4 items-center transition hover:opacity-75'
+								>
 									<img src={logo} alt={`Logo de ${name}`} class='w-6 h-6' />
 									{name}
 								</a>
