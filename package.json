@@ -1,9 +1,9 @@
 {
 	"name": "kings-league",
-	"type": "module",
 	"version": "1.0.1",
 	"description": "Kings League Infojobs Project with API & Web",
 	"main": "index.js",
+	"type": "module",
 	"scripts": {
 		"astro": "astro",
 		"build": "astro build",
