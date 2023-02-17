@@ -5,6 +5,9 @@ module.exports = {
 		'./components/**/*.{html,js}'],
 	theme: {
 		extend: {
+			fontSize: {
+				xxs: '.625rem'
+			},
 			fontFamily: {
 				body: ['Archivo Black', 'system-ui', 'sans-serif'],
 				black: ['Archivo Black', 'system-ui', 'sans-serif']
