@@ -4,7 +4,12 @@ module.exports = {
 		'./pages/**/*.{html,js}',
 		'./components/**/*.{html,js}'],
 	theme: {
-		extend: {}
+		extend: {
+			fontFamily: {
+				body: ['Archivo Black', 'system-ui', 'sans-serif'],
+				black: ['Archivo Black', 'system-ui', 'sans-serif']
+			}
+		}
 	},
 	plugins: []
 }
