@@ -5,9 +5,3 @@ node_compat = true
 
 [site]
 bucket = "./assets"
-
-[env.production]
-vars = { ENVIRONMENT = "production" }
-routes = [
-  	{ pattern = "kings-league-api.carlos8alb.workers.dev", custom_domain = true }
-]
