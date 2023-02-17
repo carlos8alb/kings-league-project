@@ -1,6 +1,6 @@
 import { Hono } from 'hono'
 import { serveStatic } from 'hono/serve-static.module'
-import { TEAMS, PRESIDENTS, LEADERBOARD, MVPS } from '../db/index.js'
+import { TEAMS, PRESIDENTS, LEADERBOARD, MVPS } from '../db'
 
 const app = new Hono()
 
