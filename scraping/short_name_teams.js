@@ -1,6 +1,6 @@
 import { TEAMS } from '../db/index.js'
 
-export function getShortNameTeams() {
+export function getShortNameTeams () {
 	/*
 		{
 			teamId : shortName
@@ -12,6 +12,7 @@ export function getShortNameTeams() {
 		'el-barrio': 'RDB',
 		'ultimate-mostoles': 'ULT',
 		'saiyans-fc': 'SAI',
+		// eslint-disable-next-line quote-props
 		'kunisports': 'KNS',
 		'jijantes-fc': 'JFC',
 		'rayo-barcelona': 'RDB',
