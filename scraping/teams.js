@@ -26,7 +26,7 @@ const MAPPER_STATS_PLAYER = {
 	defensa: 'defense'
 }
 
-async function getTeams() {
+async function getTeams () {
 	const teams = []
 
 	const saveImage = async ({ url, folder, fileName }) => {

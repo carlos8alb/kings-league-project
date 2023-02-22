@@ -11,6 +11,6 @@ describe('testing db functionality', () => {
 	})
 	it('returns team image', () => {
 		const image = getImageFromTeam({ name: '1K FC' })
-		expect(image).toBe('https://kings-league-api.carlos8alb.workers.dev/teams/logos/1k.svg')
+		expect(image).toBe('https://kings-league-api.carlos8alb.workers.dev/static/teams/logos/1k.svg')
 	})
 })
