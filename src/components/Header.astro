@@ -1,50 +1,74 @@
 ---
 import Logo from '@components/Logo.astro'
+const menu = [
+	{
+		name: 'Equipos',
+		href: '/equipos'
+	},
+	{
+		name: 'Calendario',
+		href: '/calendario'
+	},
+	{
+		name: 'Estadísticas',
+		href: '/estadisticas'
+	},
+	{
+		name: 'Contacto',
+		href: '/contacto'
+	},
+	{
+		name: 'Reglamento',
+		href: '/reglamento'
+	}
+]
+
 const response = await fetch('https://kings-league-api.carlos8alb.workers.dev/teams')
 const teams = await response.json()
 ---
 
 <header
-	class='flex items-center w-full bg-gradient-to-b from-[#ff6900] via-[#ff6900] to-[#e66000] p-8 gap-x-8'
+	class='flex justify-center items-center w-full bg-gradient-to-b from-[#ff6900] via-[#ff6900] to-[#e66000] p-8 gap-x-8'
 >
-	<Logo />
 	<div class='flex flex-col h-full gap-4'>
 		<nav>
-			<ul class='flex gap-x-2 [&>li>a>img:hover]:scale-150'>
+			<ul class='flex items-center justify-center gap-x-2 [&>li>a>img:hover]:scale-150'>
 				{
-					teams.map(({ id, image, name }) => (
-						<li>
-							<a href={`/team/${id}`}>
-								<img
-									src={image}
-									alt={`Escudo del equipo ${name}`}
-									class='h-12 w-12 transition-all'
-								/>
-							</a>
-						</li>
+					teams.map(({ id, image, name }, index) => (
+						<>
+							{index === 6 ? <Logo /> : ''}
+							<li>
+								<a href={`/team/${id}`}>
+									<img
+										src={image}
+										alt={`Escudo del equipo ${name}`}
+										class='h-12 w-12 transition-all'
+									/>
+								</a>
+							</li>
+						</>
 					))
 				}
 			</ul>
 		</nav>
 		<nav>
 			<ul
-				class='flex text-white gap-x-4 font-semibold text-md [&>li>a]:opacity-80 [&>li>a:hover]:opacity-100 [&>li>a:hover]:underline'
+				class='flex justify-center items-center text-white gap-x-4 font-semibold text-md [&>li>a]:opacity-80 [&>li>a:hover]:opacity-100 [&>li>a:hover]:underline'
 			>
-				<li>
-					<a href='/equipos'>Equipos</a>
-				</li>
-				<li>
-					<a href='/calendario'>Calendario</a>
-				</li>
-				<li>
-					<a href='/estadisticas'>Estadísticas</a>
-				</li>
-				<li>
-					<a href='/contacto'>Contacto</a>
-				</li>
-				<li>
-					<a href='/reglamento'>Reglamento</a>
-				</li>
+				{
+					menu.map(({ name, href }) => (
+						<li>
+							<a
+								class={`transition ${
+									Astro.url.pathname === href ? 'opacity-100 underline pointer-events-none' : ''
+								}`}
+								href={href}
+							>
+								{name}
+							</a>
+						</li>
+					))
+				}
 			</ul>
 		</nav>
 	</div>
