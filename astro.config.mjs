@@ -5,20 +5,20 @@ import critters from 'astro-critters'
 import prefetch from '@astrojs/prefetch'
 import sitemap from '@astrojs/sitemap'
 
-const website = 'https://kingsleague.dev/'
+const website = 'https://kings-league-api.carlos8alb.workers.dev/'
 
 // https://astro.build/config
 export default defineConfig({
-  site: website,
-  server: {
-    host: true
-  },
-  integrations: [
-    tailwind(),
-    critters(),
-    prefetch(),
-    sitemap({
-      lastmod: new Date()
-    })
-  ]
+	site: website,
+	server: {
+		host: true
+	},
+	integrations: [
+		tailwind(),
+		critters(),
+		prefetch(),
+		sitemap({
+			lastmod: new Date()
+		})
+	]
 })
