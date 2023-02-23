@@ -1,0 +1,40 @@
+---
+import Container from '@components/Container.astro'
+import TeamsSelectorCards from '@components/TeamsSelectorCards.astro'
+import Layout from '@layouts/Layout.astro'
+import { getAllTeams } from '@services/teams'
+
+export async function getStaticPaths() {
+	const teams = await getAllTeams()
+
+	return teams.map((team) => ({
+		params: { teamId: team.id },
+		props: { ...team }
+	}))
+}
+
+const { name, image, presidentId, coach, channel, players } = Astro.props
+---
+
+<Layout title={name}>
+	<Container>
+		<section class='flex items-center justify-between'>
+			<div class='flex items-center gap-x-12'>
+				<img src={image} alt={`Escudo del equipo ${name}`} width='130' height='130' />
+				<h1 class='font-bold text-5xl'>{name}</h1>
+			</div>
+			<a href={channel} class='text-purple-900 font-bold' target='_blank' rel='noopener noreferrer'>
+				Twitch
+			</a>
+		</section>
+		<section class='my-2'>
+			<ul>
+				<li><b>Presidente:</b>{presidentId}</li>
+				<li><b>Entrenador:</b>{coach}</li>
+				<li><b>Jugadores:</b>{players.lenght}</li>
+			</ul>
+		</section>
+		<section class='my-2'>Estadísticas</section>
+		<TeamsSelectorCards />
+	</Container>
+</Layout>
