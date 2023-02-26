@@ -13,28 +13,54 @@ export async function getStaticPaths() {
 	}))
 }
 
-const { name, image, presidentId, coach, channel, players } = Astro.props
+const { name, image, presidentId, coach, channel, players, color } = Astro.props
 ---
 
 <Layout title={name}>
-	<Container>
-		<section class='flex items-center justify-between'>
-			<div class='flex items-center gap-x-12'>
-				<img src={image} alt={`Escudo del equipo ${name}`} width='130' height='130' />
-				<h1 class='font-bold text-5xl'>{name}</h1>
+	<section class='bg-[#cd5500] py-10'>
+		<Container>
+			<div
+				class='bg-gradient-to-tr from-gray-600 to-gray-900 p-20 shadow-xl -mt-10 z-10 mb-40'
+				style={`--tw-gradient-from:${color}`}
+			>
+				<section class='flex items-center justify-between'>
+					<div class='flex items-center gap-x-12'>
+						<img class='w-28 h-28' src={image} alt={`Escudo del equipo ${name}`} />
+						<h1 class='font-bold text-5xl'>{name}</h1>
+					</div>
+					<a
+						href={channel}
+						class='text-purple-900 font-bold'
+						target='_blank'
+						rel='noopener noreferrer'
+					>
+						Twitch
+					</a>
+				</section>
+				<section class='my-2'>
+					<ul>
+						<li><b>Presidente:</b>{presidentId}</li>
+						<li><b>Entrenador:</b>{coach}</li>
+						<li><b>Jugadores:</b>{players.lenght}</li>
+					</ul>
+				</section>
+				<section class='grid grid-cols-5 gap-2'>
+					{
+						players.map((player) => (
+							<article class='text-center font-title text-slate-900 bg-white rounded-sm p-5 m-auto'>
+								<img
+									class='w-36 h-auto'
+									src={`https://kings-league-api.carlos8alb.workers.dev/static/players/${player.image}`}
+									alt={`${player.name}`}
+								/>
+								<p>{player.name}</p>
+								<p class='text-slate-600 font-body'>{player.role}</p>
+							</article>
+						))
+					}
+				</section>
+				<TeamsSelectorCards />
 			</div>
-			<a href={channel} class='text-purple-900 font-bold' target='_blank' rel='noopener noreferrer'>
-				Twitch
-			</a>
-		</section>
-		<section class='my-2'>
-			<ul>
-				<li><b>Presidente:</b>{presidentId}</li>
-				<li><b>Entrenador:</b>{coach}</li>
-				<li><b>Jugadores:</b>{players.lenght}</li>
-			</ul>
-		</section>
-		<section class='my-2'>Estadísticas</section>
-		<TeamsSelectorCards />
-	</Container>
+		</Container>
+	</section>
 </Layout>
