@@ -193,7 +193,7 @@
 			"president": {
 				"id": "ibai-llanos",
 				"name": "Ibai Llanos",
-				"image": "https://kings-league-api.carlos8alb.workers.dev/presidents/ibai-llanos.webp",
+				"image": "https://kings-league-api.carlos8alb.workers.dev/static/teams/presidents/ibai-llanos.webp",
 				"teamId": "porcinos-fc"
 			}
 		},
@@ -392,7 +392,7 @@
 			"president": {
 				"id": "thegrefg",
 				"name": "TheGrefg",
-				"image": "https://kings-league-api.carlos8alb.workers.dev/presidents/thegrefg.webp",
+				"image": "https://kings-league-api.carlos8alb.workers.dev/static/teams/presidents/thegrefg.webp",
 				"teamId": "saiyans-fc"
 			}
 		},
@@ -591,7 +591,7 @@
 			"president": {
 				"id": "djmariio",
 				"name": "DjMaRiiO",
-				"image": "https://kings-league-api.carlos8alb.workers.dev/presidents/djmariio.webp",
+				"image": "https://kings-league-api.carlos8alb.workers.dev/static/teams/presidents/djmariio.webp",
 				"teamId": "ultimate-mostoles"
 			}
 		},
@@ -790,7 +790,7 @@
 			"president": {
 				"id": "kun-aguero",
 				"name": "Kun Agüero",
-				"image": "https://kings-league-api.carlos8alb.workers.dev/presidents/kun-aguero.webp",
+				"image": "https://kings-league-api.carlos8alb.workers.dev/static/teams/presidents/kun-aguero.webp",
 				"teamId": "kunisports"
 			}
 		},
@@ -996,7 +996,7 @@
 			"president": {
 				"id": "adri-contreras",
 				"name": "Adri Contreras",
-				"image": "https://kings-league-api.carlos8alb.workers.dev/presidents/adri-contreras.webp",
+				"image": "https://kings-league-api.carlos8alb.workers.dev/static/teams/presidents/adri-contreras.webp",
 				"teamId": "el-barrio"
 			}
 		},
@@ -1202,7 +1202,7 @@
 			"president": {
 				"id": "iker-casillas",
 				"name": "Iker Casillas",
-				"image": "https://kings-league-api.carlos8alb.workers.dev/presidents/iker-casillas.webp",
+				"image": "https://kings-league-api.carlos8alb.workers.dev/static/teams/presidents/iker-casillas.webp",
 				"teamId": "1k"
 			}
 		},
@@ -1401,7 +1401,7 @@
 			"president": {
 				"id": "juan-guarnizo",
 				"name": "Juan Guarnizo",
-				"image": "https://kings-league-api.carlos8alb.workers.dev/presidents/juan-guarnizo.webp",
+				"image": "https://kings-league-api.carlos8alb.workers.dev/static/teams/presidents/juan-guarnizo.webp",
 				"teamId": "aniquiladores-fc"
 			}
 		},
@@ -1605,7 +1605,7 @@
 			"president": {
 				"id": "spursito",
 				"name": "Spursito",
-				"image": "https://kings-league-api.carlos8alb.workers.dev/presidents/spursito.webp",
+				"image": "https://kings-league-api.carlos8alb.workers.dev/static/teams/presidents/spursito.webp",
 				"teamId": "rayo-barcelona"
 			}
 		},
@@ -1804,7 +1804,7 @@
 			"president": {
 				"id": "hnos-buyer",
 				"name": "Hnos. Buyer",
-				"image": "https://kings-league-api.carlos8alb.workers.dev/presidents/hnos-buyer.webp",
+				"image": "https://kings-league-api.carlos8alb.workers.dev/static/teams/presidents/hnos-buyer.webp",
 				"teamId": "xbuyer-team"
 			}
 		},
@@ -2006,7 +2006,7 @@
 			"president": {
 				"id": "perxitaa",
 				"name": "Perxitaa",
-				"image": "https://kings-league-api.carlos8alb.workers.dev/presidents/perxitaa.webp",
+				"image": "https://kings-league-api.carlos8alb.workers.dev/static/teams/presidents/perxitaa.webp",
 				"teamId": "los-troncos-fc"
 			}
 		},
@@ -2208,7 +2208,7 @@
 			"president": {
 				"id": "rivers",
 				"name": "Rivers",
-				"image": "https://kings-league-api.carlos8alb.workers.dev/presidents/rivers.webp",
+				"image": "https://kings-league-api.carlos8alb.workers.dev/static/teams/presidents/rivers.webp",
 				"teamId": "pio-fc"
 			}
 		},
@@ -2410,7 +2410,7 @@
 			"president": {
 				"id": "gerard-romero",
 				"name": "Gerard Romero",
-				"image": "https://kings-league-api.carlos8alb.workers.dev/presidents/gerard-romero.webp",
+				"image": "https://kings-league-api.carlos8alb.workers.dev/static/teams/presidents/gerard-romero.webp",
 				"teamId": "jijantes-fc"
 			}
 		},
