@@ -3,6 +3,10 @@ import Container from '@components/Container.astro'
 import TeamsSelectorCards from '@components/TeamsSelectorCards.astro'
 import Layout from '@layouts/Layout.astro'
 import { getAllTeams } from '@services/teams'
+import { findPresidentBy } from '@services/presidents'
+import TeamStats from '@components/TeamStats.astro'
+
+const ICON_NETWORK_MAPPING = ['instagram', 'tiktok', 'twitch', 'twitter', 'youtube']
 
 export async function getStaticPaths() {
 	const teams = await getAllTeams()
@@ -13,54 +17,91 @@ export async function getStaticPaths() {
 	}))
 }
 
-const { name, image, presidentId, coach, channel, players, color } = Astro.props
+const { id, name, imageWhite, presidentId, players, color, socialNetworks } = Astro.props
+
+const socialNetworksWithIcon = socialNetworks.map((href) => ({
+	href,
+	icon: ICON_NETWORK_MAPPING.find((key) => href.includes(key))
+}))
+
+const president = await findPresidentBy({ id: presidentId })
 ---
 
 <Layout title={name}>
-	<section class='bg-[#cd5500] py-10'>
+	<section
+		class='relative bg-gradient-to-tr from-gray-600 to-gray-900 shadow-xl rounded py-20 z-10'
+		style={`--tw-gradient-from:${color}`}
+	>
 		<Container>
-			<div
-				class='bg-gradient-to-tr from-gray-600 to-gray-900 p-20 shadow-xl -mt-10 z-10 mb-40'
-				style={`--tw-gradient-from:${color}`}
-			>
-				<section class='flex items-center justify-between'>
+			<div class='-mt-10'>
+				<section class='flex items-center justify-between pb-96'>
 					<div class='flex items-center gap-x-12'>
-						<img class='w-28 h-28' src={image} alt={`Escudo del equipo ${name}`} />
-						<h1 class='font-bold text-5xl'>{name}</h1>
+						<img class='w-28 h-auto' src={imageWhite} alt={`Escudo del equipo ${name}`} />
+						<div class='flex flex-col gap-y-4'>
+							<h1 class='font-black text-white text-6xl'>{name}</h1>
+							<ul class='flex flex-row gap-x-4'>
+								{
+									socialNetworksWithIcon.map(({ href, icon }) => {
+										return (
+											<li>
+												<a
+													class='block transition hover:scale-150'
+													href={href}
+													target='_blank'
+													rel='noopener norefferer'
+												>
+													<img class='w-8 h-8' src={`/logos/social/${icon}.svg`} />
+												</a>
+											</li>
+										)
+									})
+								}
+							</ul>
+						</div>
 					</div>
-					<a
-						href={channel}
-						class='text-purple-900 font-bold'
-						target='_blank'
-						rel='noopener noreferrer'
-					>
-						Twitch
-					</a>
+					<div class='absolute -top-20 right-20 text-center'>
+						<img class='w-96 h-auto aspect-[170/239]' src={president.image} alt={president.name} />
+						<div class='flex flex-col'>
+							<h3 class='font-title text-white text-3xl py-2'>{president.name}</h3>
+							<h4 class='font-title text-white uppercase p-1 font-semibold'>Presidente</h4>
+						</div>
+					</div>
 				</section>
-				<section class='my-2'>
-					<ul>
-						<li><b>Presidente:</b>{presidentId}</li>
-						<li><b>Entrenador:</b>{coach}</li>
-						<li><b>Jugadores:</b>{players.lenght}</li>
-					</ul>
+				<section>
+					<h2 class='font-bold text-white text-5xl text-center py-10'>Jugadores</h2>
+					<div class='grid grid-cols-4 gap-2 items-center'>
+						{
+							players.map((player) => (
+								<article class='text-center font-title text-slate-900 rounded-sm p-5 m-auto'>
+									<img
+										class='w-36 h-auto aspect-[170/239] m-auto'
+										src={`https://kings-league-api.carlos8alb.workers.dev/static/teams/players/${player.image}`}
+										alt={`${player.name}`}
+									/>
+									<h3 class='font-title text-white text-3xl py-2'>{player.fullName}</h3>
+									<h4 class=' font-title text-white uppercase rounded-full bg-black p-1 font-semibold'>
+										{player.role}
+									</h4>
+								</article>
+							))
+						}
+					</div>
 				</section>
-				<section class='grid grid-cols-5 gap-2'>
-					{
-						players.map((player) => (
-							<article class='text-center font-title text-slate-900 bg-white rounded-sm p-5 m-auto'>
-								<img
-									class='w-36 h-auto'
-									src={`https://kings-league-api.carlos8alb.workers.dev/static/players/${player.image}`}
-									alt={`${player.name}`}
-								/>
-								<p>{player.name}</p>
-								<p class='text-slate-600 font-body'>{player.role}</p>
-							</article>
-						))
-					}
-				</section>
-				<TeamsSelectorCards />
+				<div
+					class={'-z-10 absolute inset-0 opacity-5 bg-center bg-[size:80%] transition bg-no-repeat'}
+					style={`background-image:url('${imageWhite}')`}
+				>
+				</div>
 			</div>
 		</Container>
 	</section>
+	<TeamStats teamId={id} />
+	<Container>
+		<div>
+			<h3 class='text-title text-5xl text-center py-4'>Todos los equipos</h3>
+			<section class='py-20'>
+				<TeamsSelectorCards />
+			</section>
+		</div>
+	</Container>
 </Layout>
