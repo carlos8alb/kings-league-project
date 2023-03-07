@@ -16,7 +16,7 @@ const leaderboard = await response.json()
 		<tbody>
 			{
 				leaderboard.map((info, index) => {
-					const { team, wins, loses, rank } = info
+					const { team, wins, losses, rank } = info
 					const { id, name, image: logo } = team
 					return (
 						<tr class='bg-white border-b text-black text-center'>
@@ -33,7 +33,7 @@ const leaderboard = await response.json()
 								</a>
 							</td>
 							<td class='px-6 py-4'>{wins}</td>
-							<td class='px-6 py-4'>{loses}</td>
+							<td class='px-6 py-4'>{losses}</td>
 						</tr>
 					)
 				})
