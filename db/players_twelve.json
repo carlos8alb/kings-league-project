@@ -3,7 +3,7 @@
     "role": "Delantero",
     "firstName": "Fernandão",
     "lastName": "",
-    "image": null,
+    "image": "saiyans-fc-Saiyans_6.webp",
     "fullName": "Fernandão ",
     "id": "saiyans-fc-Saiyans_6",
     "team": {
@@ -17,7 +17,7 @@
     "role": "Delantero",
     "firstName": "Ezequiel",
     "lastName": "Calvente",
-    "image": null,
+    "image": "aniquiladores-fc-Aniquiladores_28.webp",
     "fullName": "Ezequiel Calvente",
     "id": "aniquiladores-fc-Aniquiladores_28",
     "team": {
@@ -31,7 +31,7 @@
     "role": "Medio",
     "firstName": "Ronaldinho",
     "lastName": "",
-    "image": null,
+    "image": "porcinos-fc-Porcinos_10_2.webp",
     "fullName": "Ronaldinho ",
     "id": "porcinos-fc-Porcinos_10_2",
     "team": {
@@ -45,7 +45,7 @@
     "role": "Medio",
     "firstName": "Walter",
     "lastName": "Montillo",
-    "image": null,
+    "image": "kunisports-Kunisports_14.webp",
     "fullName": "Walter Montillo",
     "id": "kunisports-Kunisports_14",
     "team": {
@@ -59,7 +59,7 @@
     "role": "Defensa",
     "firstName": "Diego",
     "lastName": "de la Mata",
-    "image": null,
+    "image": "ultimate-mostoles-UltimateMostoles_5.webp",
     "fullName": "Diego de la Mata",
     "id": "ultimate-mostoles-UltimateMostoles_5",
     "team": {
@@ -73,7 +73,7 @@
     "role": "Medio",
     "firstName": "Armando",
     "lastName": "Sosa",
-    "image": null,
+    "image": "rayo-barcelona-RayoBCN_3.webp",
     "fullName": "Armando Sosa",
     "id": "rayo-barcelona-RayoBCN_3",
     "team": {
@@ -87,7 +87,7 @@
     "role": "Delantero",
     "firstName": "Carlos",
     "lastName": "Omabegho",
-    "image": null,
+    "image": "los-troncos-fc-LosTroncos_99.webp",
     "fullName": "Carlos Omabegho",
     "id": "los-troncos-fc-LosTroncos_99",
     "team": {
@@ -101,7 +101,7 @@
     "role": "Medio",
     "firstName": "Augusto",
     "lastName": "Fdez.",
-    "image": null,
+    "image": "kunisports-Kunisports_12.webp",
     "fullName": "Augusto Fdez.",
     "id": "kunisports-Kunisports_12",
     "team": {
@@ -115,7 +115,7 @@
     "role": "Medio",
     "firstName": "Carlos",
     "lastName": "Corvo",
-    "image": null,
+    "image": "pio-fc-Pio_12.webp",
     "fullName": "Carlos Corvo",
     "id": "pio-fc-Pio_12",
     "team": {
@@ -129,7 +129,7 @@
     "role": "Defensa",
     "firstName": "Martín",
     "lastName": "Mantovani",
-    "image": null,
+    "image": "el-barrio-Barrio_5.webp",
     "fullName": "Martín Mantovani",
     "id": "el-barrio-Barrio_5",
     "team": {
@@ -143,7 +143,7 @@
     "role": "Medio",
     "firstName": "Walter",
     "lastName": "Erviti",
-    "image": null,
+    "image": "aniquiladores-fc-Aniquiladores_18.webp",
     "fullName": "Walter Erviti",
     "id": "aniquiladores-fc-Aniquiladores_18",
     "team": {
@@ -157,7 +157,7 @@
     "role": "Delantero",
     "firstName": "Fabián",
     "lastName": "Orellana",
-    "image": null,
+    "image": "xbuyer-team-XBuyerTeam_14.webp",
     "fullName": "Fabián Orellana",
     "id": "xbuyer-team-XBuyerTeam_14",
     "team": {
@@ -171,7 +171,7 @@
     "role": "Defensa",
     "firstName": "Joseba",
     "lastName": "García",
-    "image": null,
+    "image": "saiyans-fc-Saiyans_23.webp",
     "fullName": "Joseba García",
     "id": "saiyans-fc-Saiyans_23",
     "team": {
@@ -185,7 +185,7 @@
     "role": "Defensa",
     "firstName": "David",
     "lastName": "García",
-    "image": null,
+    "image": "pio-fc-Pio_03.webp",
     "fullName": "David García",
     "id": "pio-fc-Pio_03",
     "team": {
@@ -199,7 +199,7 @@
     "role": "Defensa",
     "firstName": "Antonio",
     "lastName": "Barragán",
-    "image": null,
+    "image": "jijantes-fc-Jijantes_19.webp",
     "fullName": "Antonio Barragán",
     "id": "jijantes-fc-Jijantes_19",
     "team": {
@@ -213,7 +213,7 @@
     "role": "Medio",
     "firstName": "Joel",
     "lastName": "Huertas",
-    "image": null,
+    "image": "jijantes-fc-Jijantes_22.webp",
     "fullName": "Joel Huertas",
     "id": "jijantes-fc-Jijantes_22",
     "team": {
@@ -227,7 +227,7 @@
     "role": "Defensa",
     "firstName": "Nico",
     "lastName": "Pareja",
-    "image": null,
+    "image": "el-barrio-Barrio_21.webp",
     "fullName": "Nico Pareja",
     "id": "el-barrio-Barrio_21",
     "team": {
@@ -241,7 +241,7 @@
     "role": "Medio",
     "firstName": "Nadir",
     "lastName": "Louah",
-    "image": null,
+    "image": "aniquiladores-fc-Aniquiladores_30.webp",
     "fullName": "Nadir Louah",
     "id": "aniquiladores-fc-Aniquiladores_30",
     "team": {
@@ -255,7 +255,7 @@
     "role": "Delantero",
     "firstName": "Kun",
     "lastName": "Agüero",
-    "image": null,
+    "image": "kunisports-Kunisports_10.webp",
     "fullName": "Kun Agüero",
     "id": "kunisports-Kunisports_10",
     "team": {
@@ -269,7 +269,7 @@
     "role": "Medio",
     "firstName": "Fouad",
     "lastName": "El Amrani",
-    "image": null,
+    "image": "xbuyer-team-XBuyerTeam_80.webp",
     "fullName": "Fouad El Amrani",
     "id": "xbuyer-team-XBuyerTeam_80",
     "team": {
@@ -283,7 +283,7 @@
     "role": "Medio",
     "firstName": "Pitu",
     "lastName": "Comadevall",
-    "image": null,
+    "image": "jijantes-fc-Jijantes_19.webp",
     "fullName": "Pitu Comadevall",
     "id": "jijantes-fc-Jijantes_19",
     "team": {
@@ -297,7 +297,7 @@
     "role": "Delantero",
     "firstName": "Papi",
     "lastName": "Gavi",
-    "image": null,
+    "image": "el-barrio-Barrio_27.webp",
     "fullName": "Papi Gavi",
     "id": "el-barrio-Barrio_27",
     "team": {
@@ -311,7 +311,7 @@
     "role": "Medio",
     "firstName": "Goku",
     "lastName": "",
-    "image": null,
+    "image": "aniquiladores-fc-Aniquiladores_7.webp",
     "fullName": "Goku ",
     "id": "aniquiladores-fc-Aniquiladores_7",
     "team": {
@@ -325,7 +325,7 @@
     "role": "Medio",
     "firstName": "Cristian",
     "lastName": "Saldaña",
-    "image": null,
+    "image": "saiyans-fc-Saiyans_3.webp",
     "fullName": "Cristian Saldaña",
     "id": "saiyans-fc-Saiyans_3",
     "team": {
@@ -339,7 +339,7 @@
     "role": "Delantero",
     "firstName": "Hugo",
     "lastName": "Fraile",
-    "image": null,
+    "image": "porcinos-fc-11.webp",
     "fullName": "Hugo Fraile",
     "id": "porcinos-fc-11",
     "team": {
@@ -353,7 +353,7 @@
     "role": "Medio",
     "firstName": "Javier",
     "lastName": "Saviola",
-    "image": null,
+    "image": "kunisports-22.webp",
     "fullName": "Javier Saviola",
     "id": "kunisports-22",
     "team": {
@@ -367,7 +367,7 @@
     "role": "Delantero",
     "firstName": "David",
     "lastName": "Acedo",
-    "image": null,
+    "image": "aniquiladores-fc-7.webp",
     "fullName": "David Acedo",
     "id": "aniquiladores-fc-7",
     "team": {
@@ -381,7 +381,7 @@
     "role": "Delantero",
     "firstName": "Ibai",
     "lastName": "Gómez",
-    "image": null,
+    "image": "jijantes-fc-11.webp",
     "fullName": "Ibai Gómez",
     "id": "jijantes-fc-11",
     "team": {
@@ -395,7 +395,7 @@
     "role": "Medio",
     "firstName": "Víctor",
     "lastName": "Sánchez",
-    "image": null,
+    "image": "los-troncos-fc-20.webp",
     "fullName": "Víctor Sánchez",
     "id": "los-troncos-fc-20",
     "team": {
@@ -409,7 +409,7 @@
     "role": "Medio",
     "firstName": "Javi",
     "lastName": "Márquez",
-    "image": null,
+    "image": "pio-fc-5.webp",
     "fullName": "Javi Márquez",
     "id": "pio-fc-5",
     "team": {
@@ -423,7 +423,7 @@
     "role": "Medio",
     "firstName": "Rubén",
     "lastName": "de la Red",
-    "image": null,
+    "image": "ultimate-mostoles-8.webp",
     "fullName": "Rubén de la Red",
     "id": "ultimate-mostoles-8",
     "team": {
@@ -437,7 +437,7 @@
     "role": "Medio",
     "firstName": "Enigma",
     "lastName": "",
-    "image": null,
+    "image": "xbuyer-team-69.webp",
     "fullName": "Enigma ",
     "id": "xbuyer-team-69",
     "team": {
@@ -451,7 +451,7 @@
     "role": "Delantero",
     "firstName": "Sergio",
     "lastName": "García",
-    "image": null,
+    "image": "ultimate-mostoles-9.webp",
     "fullName": "Sergio García",
     "id": "ultimate-mostoles-9",
     "team": {
@@ -465,7 +465,7 @@
     "role": "Delantero",
     "firstName": "Alberto",
     "lastName": "Bueno",
-    "image": null,
+    "image": "1k-23.webp",
     "fullName": "Alberto Bueno",
     "id": "1k-23",
     "team": {
@@ -479,7 +479,7 @@
     "role": "Defensa",
     "firstName": "Javi",
     "lastName": "Chica",
-    "image": null,
+    "image": "kunisports-Kunisports_30.webp",
     "fullName": "Javi Chica",
     "id": "kunisports-Kunisports_30",
     "team": {
@@ -493,7 +493,7 @@
     "role": "Defensa",
     "firstName": "Dídac",
     "lastName": "Vilà",
-    "image": null,
+    "image": "rayo-barcelona-7.webp",
     "fullName": "Dídac Vilà",
     "id": "rayo-barcelona-7",
     "team": {
@@ -507,7 +507,7 @@
     "role": "Delantero",
     "firstName": "Borja",
     "lastName": "Criado",
-    "image": null,
+    "image": "pio-fc-7.webp",
     "fullName": "Borja Criado",
     "id": "pio-fc-7",
     "team": {
@@ -521,7 +521,7 @@
     "role": "Delantero",
     "firstName": "Jordi",
     "lastName": "Campoy",
-    "image": null,
+    "image": "aniquiladores-fc-18.webp",
     "fullName": "Jordi Campoy",
     "id": "aniquiladores-fc-18",
     "team": {
@@ -535,7 +535,7 @@
     "role": "Medio",
     "firstName": "Nando",
     "lastName": "Quesada",
-    "image": null,
+    "image": "jijantes-fc-18.webp",
     "fullName": "Nando Quesada",
     "id": "jijantes-fc-18",
     "team": {
@@ -549,7 +549,7 @@
     "role": "Medio",
     "firstName": "Joan",
     "lastName": "Verdú",
-    "image": null,
+    "image": "los-troncos-fc-23.webp",
     "fullName": "Joan Verdú",
     "id": "los-troncos-fc-23",
     "team": {
@@ -563,7 +563,7 @@
     "role": "Delantero",
     "firstName": "Jorge",
     "lastName": "Gómez",
-    "image": null,
+    "image": "el-barrio-99.webp",
     "fullName": "Jorge Gómez",
     "id": "el-barrio-99",
     "team": {
@@ -577,7 +577,7 @@
     "role": "Defensa",
     "firstName": "Joan",
     "lastName": "Capdevila",
-    "image": null,
+    "image": "saiyans-fc-21.webp",
     "fullName": "Joan Capdevila",
     "id": "saiyans-fc-21",
     "team": {
@@ -591,7 +591,7 @@
     "role": "Delantero",
     "firstName": "Chicharito",
     "lastName": "",
-    "image": null,
+    "image": "porcinos-fc-14.webp",
     "fullName": "Chicharito ",
     "id": "porcinos-fc-14",
     "team": {
