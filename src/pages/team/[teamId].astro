@@ -2,7 +2,7 @@
 import Container from '@components/Container.astro'
 import TeamsSelectorCards from '@components/TeamsSelectorCards.astro'
 import Layout from '@layouts/Layout.astro'
-import { getAllTeams } from '@services/teams'
+import { getAllTeams, getPlayerTwelveByTeam } from '@services/teams'
 import { findPresidentBy } from '@services/presidents'
 import TeamStats from '@components/TeamStats.astro'
 
@@ -25,6 +25,7 @@ const socialNetworksWithIcon = socialNetworks.map((href) => ({
 }))
 
 const president = await findPresidentBy({ id: presidentId })
+const playerTwelve = await getPlayerTwelveByTeam({ teamId: id })
 ---
 
 <Layout title={name}>
@@ -34,49 +35,57 @@ const president = await findPresidentBy({ id: presidentId })
 	>
 		<Container>
 			<div class='-mt-10'>
-				<section class='flex items-center justify-between pb-96'>
-					<div class='flex items-center gap-x-12'>
-						<img class='w-28 h-auto' src={imageWhite} alt={`Escudo del equipo ${name}`} />
-						<div class='flex flex-col gap-y-4'>
-							<h1 class='font-black text-white text-6xl'>{name}</h1>
-							<ul class='flex flex-row gap-x-4'>
-								{
-									socialNetworksWithIcon.map(({ href, icon }) => {
-										return (
-											<li>
-												<a
-													class='block transition hover:scale-150'
-													href={href}
-													target='_blank'
-													rel='noopener norefferer'
-												>
-													<img class='w-8 h-8' src={`/logos/social/${icon}.svg`} />
-												</a>
-											</li>
-										)
-									})
-								}
-							</ul>
+				<div class='pb-28'>
+					<section class='flex items-center justify-between'>
+						<div class='flex items-center gap-x-12'>
+							<img class='w-28 h-auto' src={imageWhite} alt={`Escudo del equipo ${name}`} />
+							<div class='flex flex-col gap-y-4'>
+								<h1 class='font-black text-white text-6xl'>{name}</h1>
+								<ul class='flex flex-row gap-x-4'>
+									{
+										socialNetworksWithIcon.map(({ href, icon }) => {
+											return (
+												<li>
+													<a
+														class='block transition hover:scale-150'
+														href={href}
+														target='_blank'
+														rel='noopener norefferer'
+													>
+														<img class='w-8 h-8' src={`/logos/social/${icon}.svg`} />
+													</a>
+												</li>
+											)
+										})
+									}
+								</ul>
+							</div>
 						</div>
-					</div>
-					<div class='absolute -top-20 right-20 text-center'>
-						<img class='w-96 h-auto aspect-[170/239]' src={president.image} alt={president.name} />
-						<div class='flex flex-col'>
-							<h3 class='font-title text-white text-3xl py-2'>{president.name}</h3>
-							<h4 class='font-title text-white uppercase p-1 font-semibold'>Presidente</h4>
+						<div class='absolute -top-20 right-20 text-center'>
+							<img
+								class='w-96 h-auto aspect-[170/239]'
+								src={president.image}
+								alt={president.name}
+							/>
+							<div class='flex flex-col'>
+								<h3 class='font-title text-white text-3xl py-2'>{president.name}</h3>
+								<h4 class='font-title text-white uppercase p-1 font-semibold'>Presidente</h4>
+							</div>
 						</div>
-					</div>
-				</section>
+					</section>
+					<TeamStats teamId={id} />
+				</div>
+
 				<section>
 					<h2 class='font-bold text-white text-5xl text-center py-10'>Jugadores</h2>
 					<div class='grid grid-cols-4 gap-2 items-center'>
 						{
-							players.map((player) => (
+							players.concat(playerTwelve).map((player) => (
 								<article class='text-center font-title text-slate-900 rounded-sm p-5 m-auto'>
 									<img
 										class='w-36 h-auto aspect-[170/239] m-auto'
 										src={`https://kings-league-api.carlos8alb.workers.dev/static/teams/players/${player.image}`}
-										alt={`${player.name}`}
+										alt={`${player.fullName}`}
 									/>
 									<h3 class='font-title text-white text-3xl py-2'>{player.fullName}</h3>
 									<h4 class=' font-title text-white uppercase rounded-full bg-black p-1 font-semibold'>
@@ -95,7 +104,6 @@ const president = await findPresidentBy({ id: presidentId })
 			</div>
 		</Container>
 	</section>
-	<TeamStats teamId={id} />
 	<Container>
 		<div>
 			<h3 class='text-title text-5xl text-center py-4'>Todos los equipos</h3>
