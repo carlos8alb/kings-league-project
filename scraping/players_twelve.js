@@ -24,7 +24,7 @@ const generateIdForPlayer = ({ teamId, image }) => {
 	return `${teamId}-${playerId}`
 }
 
-export async function getPlayersTwelve($) {
+export async function getPlayersTwelve ($) {
 	const $rows = $('div.fs-load-more-item.fs-mw')
 
 	const getTeamFrom = ({ name: teamName }) => TEAMS.find((team) => team.name === teamName)
@@ -43,7 +43,7 @@ export async function getPlayersTwelve($) {
 		})
 
 		const { teamName, firstName, lastName, ...playerInfo } = Object.fromEntries(playerEntries)
-		const name = `${firstName} ${lastName}`
+		const fullName = `${firstName} ${lastName}`
 
 		const team = getTeamFrom({ name: teamName })
 
@@ -54,7 +54,7 @@ export async function getPlayersTwelve($) {
 			firstName,
 			lastName,
 			image,
-			name,
+			fullName,
 			id: generateIdForPlayer({ teamId: team.id, image }),
 			team: {
 				id: team.id,
@@ -72,7 +72,7 @@ export async function getPlayersTwelve($) {
 	return players
 }
 
-async function saveImageWebp(player) {
+async function saveImageWebp (player) {
 	const { id, image } = player
 
 	if (image.includes('placeholder.png')) {
