@@ -1,25 +1,35 @@
 ---
 const response = await fetch('https://kings-league-api.carlos8alb.workers.dev/leaderboard')
 const leaderboard = await response.json()
+const { format } = Astro.props
+const isSmall = format === 'small'
 ---
 
 <div class='relative overflow-x-auto shadow-md sm:rounded-lg'>
 	<table class='w-full text-sm text-left text-gray-500 dark:text-gray-400'>
 		<thead class='font-title text-xxs text-white uppercase bg-black'>
 			<tr>
-				<th scope='col' class='px-6 py-3'> Pos.</th>
-				<th scope='col' class='px-6 py-3'> Equipo</th>
-				<th scope='col' class='px-6 py-3'> V</th>
-				<th scope='col' class='px-6 py-3'> D</th>
+				<th scope='col' class='px-6 py-3'>Pos.</th>
+				<th scope='col' class='px-6 py-3'>Equipo</th>
+				<th scope='col' class='px-6 py-3 text-center'>V</th>
+				<th scope='col' class='px-6 py-3 text-center'>D</th>
+				{
+					!isSmall && (
+						<th scope='col' class='px-6 py-3 text-center'>GF</th>
+						<th scope='col' class='px-6 py-3 text-center'>GC</th>
+						<th scope='col' class='px-6 py-3 text-center'>TA</th>
+						<th scope='col' class='px-6 py-3 text-center'>TR</th>
+					)
+				}
 			</tr>
 		</thead>
 		<tbody>
 			{
 				leaderboard.map((info, index) => {
-					const { team, wins, losses, rank } = info
+					const { team, wins, losses, rank, scoredGoals, concededGoals, yellowCards, redCards } = info
 					const { id, name, image: logo } = team
 					return (
-						<tr class='bg-white border-b text-black text-center'>
+						<tr class='even:bg-white odd:bg-slate-100 border-b text-black text-center'>
 							<th scope='row' class='px-6 py-4 font-bold text-black'>
 								{rank}
 							</th>
@@ -34,6 +44,15 @@ const leaderboard = await response.json()
 							</td>
 							<td class='px-6 py-4'>{wins}</td>
 							<td class='px-6 py-4'>{losses}</td>
+							{
+					!isSmall && (
+					<td class='px-6 py-4'>{scoredGoals}</td>
+					<td class='px-6 py-4'>{concededGoals}</td>
+					<td class='px-6 py-4'>{yellowCards}</td>
+					<td class='px-6 py-4'>{redCards}</td>
+
+					)
+				}
 						</tr>
 					)
 				})
