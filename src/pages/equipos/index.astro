@@ -3,13 +3,14 @@ import Container from '@components/Container.astro'
 import SectionTitle from '@components/SectionTitle.astro'
 import TeamsSelectorCards from '@components/TeamsSelectorCards.astro'
 import Layout from '@layouts/Layout.astro'
+import FloatingBoxContainer from '@components/FloatingBoxContainer.astro'
 ---
 
 <Layout title='Equipos'>
 	<SectionTitle title='Equipos' />
 	<Container>
-		<div class='bg-white p-20 shadow-xl rounded -mt-10 z-10 mb-40'>
+		<FloatingBoxContainer>
 			<TeamsSelectorCards />
-		</div>
+		</FloatingBoxContainer>
 	</Container>
 </Layout>
