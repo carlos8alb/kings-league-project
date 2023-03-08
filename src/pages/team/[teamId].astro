@@ -5,6 +5,7 @@ import Layout from '@layouts/Layout.astro'
 import { getAllTeams, getPlayerTwelveByTeam } from '@services/teams'
 import { findPresidentBy } from '@services/presidents'
 import TeamStats from '@components/TeamStats.astro'
+import TeamPagePlayers from '@components/TeamPagePlayers.astro'
 
 const ICON_NETWORK_MAPPING = ['instagram', 'tiktok', 'twitch', 'twitter', 'youtube']
 
@@ -25,7 +26,7 @@ const socialNetworksWithIcon = socialNetworks.map((href) => ({
 }))
 
 const president = await findPresidentBy({ id: presidentId })
-const playerTwelve = await getPlayerTwelveByTeam({ teamId: id })
+const playersTwelve = await getPlayerTwelveByTeam({ teamId: id })
 ---
 
 <Layout title={name}>
@@ -75,27 +76,8 @@ const playerTwelve = await getPlayerTwelveByTeam({ teamId: id })
 					</section>
 					<TeamStats teamId={id} />
 				</div>
-
-				<section>
-					<h2 class='font-bold text-white text-5xl text-center py-10'>Jugadores</h2>
-					<div class='grid grid-cols-4 gap-2 items-center'>
-						{
-							players.concat(playerTwelve).map((player) => (
-								<article class='text-center font-title text-slate-900 rounded-sm p-5 m-auto'>
-									<img
-										class='w-36 h-auto aspect-[170/239] m-auto'
-										src={`https://kings-league-api.carlos8alb.workers.dev/static/teams/players/${player.image}`}
-										alt={`${player.fullName}`}
-									/>
-									<h3 class='font-title text-white text-3xl py-2'>{player.fullName}</h3>
-									<h4 class=' font-title text-white uppercase rounded-full bg-black p-1 font-semibold'>
-										{player.role}
-									</h4>
-								</article>
-							))
-						}
-					</div>
-				</section>
+				<TeamPagePlayers players={players} title='Jugadores' />
+				<TeamPagePlayers players={playersTwelve} title='Jugador 12' />
 				<div
 					class={'-z-10 absolute inset-0 opacity-5 bg-center bg-[size:80%] transition bg-no-repeat'}
 					style={`background-image:url('${imageWhite}')`}
